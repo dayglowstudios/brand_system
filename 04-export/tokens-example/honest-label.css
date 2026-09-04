@@ -1,0 +1,21 @@
+/* Meridian · 01 The Honest Label */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Geist+Mono:wght@400..700&display=swap');
+:root{
+  --m-bone: #F4F2EC;
+  --m-ink: #17170F;
+  --m-signal: #E0451F;
+  --m-dose-grey: #9C9A90;
+  --m-bg: #F4F2EC;
+  --m-ink: #17170F;
+  --m-accent: #E0451F;
+  --m-muted: #9C9A90;
+  --m-border: #D8D5CB;
+  --m-surface: #FFFFFF;
+  --m-font-display: 'Instrument Sans', sans-serif;
+  --m-font-body: 'Instrument Sans', sans-serif;
+  --m-font-mono: 'Geist Mono', monospace;
+  --m-radius-cta: 999px;
+  --m-radius-card: 20px;
+  --m-radius-field: 999px;
+}
+body{margin:0;background:var(--m-bg);color:var(--m-ink);font-family:var(--m-font-body)}

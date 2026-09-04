@@ -1,0 +1,28 @@
+{
+  "direction": "03 The Ritual",
+  "colors": {
+    "dusk": "#E9E4F0",
+    "plum": "#2A1B3D",
+    "butter": "#F5E6A3",
+    "sage": "#8FA38A"
+  },
+  "roles": {
+    "background": "#E9E4F0",
+    "ink": "#2A1B3D",
+    "accent": "#F5E6A3",
+    "muted": "#6B5A80",
+    "border": "#CFC6DC",
+    "surface": "#2A1B3D"
+  },
+  "fonts": {
+    "display": "'Gloock', serif",
+    "body": "'Hanken Grotesk', sans-serif",
+    "mono": "'IBM Plex Mono', monospace",
+    "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Gloock&family=Hanken+Grotesk:ital,wght@0,300..800;1,300..800&family=IBM+Plex+Mono:wght@400;500&display=swap"
+  },
+  "radius": {
+    "cta": "999px",
+    "card": "32px",
+    "field": "999px"
+  }
+}

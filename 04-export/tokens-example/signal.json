@@ -1,0 +1,28 @@
+{
+  "direction": "02 The Signal",
+  "colors": {
+    "void": "#0B0B0E",
+    "signal-lime": "#D4FF3F",
+    "readout": "#F2F2F0",
+    "panel": "#17171C"
+  },
+  "roles": {
+    "background": "#0B0B0E",
+    "ink": "#F2F2F0",
+    "accent": "#D4FF3F",
+    "muted": "#8A8A94",
+    "border": "#23232A",
+    "surface": "#17171C"
+  },
+  "fonts": {
+    "display": "'Doto', sans-serif",
+    "body": "'Geist', sans-serif",
+    "mono": "'Geist Mono', monospace",
+    "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Doto:wght@400..900&family=Geist:wght@300..700&family=Geist+Mono:wght@400..700&display=swap"
+  },
+  "radius": {
+    "cta": "6px",
+    "card": "14px",
+    "field": "6px"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "direction": "01 The Honest Label",
+  "colors": {
+    "bone": "#F4F2EC",
+    "ink": "#17170F",
+    "signal": "#E0451F",
+    "dose-grey": "#9C9A90"
+  },
+  "roles": {
+    "background": "#F4F2EC",
+    "ink": "#17170F",
+    "accent": "#E0451F",
+    "muted": "#9C9A90",
+    "border": "#D8D5CB",
+    "surface": "#FFFFFF"
+  },
+  "fonts": {
+    "display": "'Instrument Sans', sans-serif",
+    "body": "'Instrument Sans', sans-serif",
+    "mono": "'Geist Mono', monospace",
+    "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Geist+Mono:wght@400..700&display=swap"
+  },
+  "radius": {
+    "cta": "999px",
+    "card": "20px",
+    "field": "999px"
+  }
+}

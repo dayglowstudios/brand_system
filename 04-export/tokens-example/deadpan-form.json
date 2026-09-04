@@ -1,0 +1,28 @@
+{
+  "direction": "1a The Deadpan Form",
+  "colors": {
+    "paper": "#F7F7F4",
+    "ink": "#141414",
+    "form-blue": "#2F4BD6",
+    "carbon": "#E8E8E3"
+  },
+  "roles": {
+    "background": "#F7F7F4",
+    "ink": "#141414",
+    "accent": "#2F4BD6",
+    "muted": "#5A5A5A",
+    "border": "#141414",
+    "surface": "#E8E8E3"
+  },
+  "fonts": {
+    "display": "'Anton', sans-serif",
+    "body": "'IBM Plex Mono', monospace",
+    "mono": "'IBM Plex Mono', monospace",
+    "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;500;700&display=swap"
+  },
+  "radius": {
+    "cta": "0",
+    "card": "0",
+    "field": "0"
+  }
+}

@@ -1,0 +1,21 @@
+/* Meridian · 02 The Signal */
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@400..900&family=Geist:wght@300..700&family=Geist+Mono:wght@400..700&display=swap');
+:root{
+  --m-void: #0B0B0E;
+  --m-signal-lime: #D4FF3F;
+  --m-readout: #F2F2F0;
+  --m-panel: #17171C;
+  --m-bg: #0B0B0E;
+  --m-ink: #F2F2F0;
+  --m-accent: #D4FF3F;
+  --m-muted: #8A8A94;
+  --m-border: #23232A;
+  --m-surface: #17171C;
+  --m-font-display: 'Doto', sans-serif;
+  --m-font-body: 'Geist', sans-serif;
+  --m-font-mono: 'Geist Mono', monospace;
+  --m-radius-cta: 6px;
+  --m-radius-card: 14px;
+  --m-radius-field: 6px;
+}
+body{margin:0;background:var(--m-bg);color:var(--m-ink);font-family:var(--m-font-body)}

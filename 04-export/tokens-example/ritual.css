@@ -1,0 +1,21 @@
+/* Meridian · 03 The Ritual */
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Hanken+Grotesk:ital,wght@0,300..800;1,300..800&family=IBM+Plex+Mono:wght@400;500&display=swap');
+:root{
+  --m-dusk: #E9E4F0;
+  --m-plum: #2A1B3D;
+  --m-butter: #F5E6A3;
+  --m-sage: #8FA38A;
+  --m-bg: #E9E4F0;
+  --m-ink: #2A1B3D;
+  --m-accent: #F5E6A3;
+  --m-muted: #6B5A80;
+  --m-border: #CFC6DC;
+  --m-surface: #2A1B3D;
+  --m-font-display: 'Gloock', serif;
+  --m-font-body: 'Hanken Grotesk', sans-serif;
+  --m-font-mono: 'IBM Plex Mono', monospace;
+  --m-radius-cta: 999px;
+  --m-radius-card: 32px;
+  --m-radius-field: 999px;
+}
+body{margin:0;background:var(--m-bg);color:var(--m-ink);font-family:var(--m-font-body)}
