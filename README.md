@@ -2,9 +2,21 @@
 
 Four phases, one folder each: `01-research-deck` → `02-design-system-canvas` → `03-voice-tests` → `04-export`. Each holds its spec, templates and, where cleared, a finished reference (the Meridian canvas in 02).
 
+## Get it
+
+**Download** — [brand_system-main.zip](https://github.com/dayglowstudios/brand_system/archive/refs/heads/main.zip) (one click, ~1.4 MB).
+
+**Terminal** — installs it as a Claude Code skill in one line:
+
+```bash
+git clone https://github.com/dayglowstudios/brand_system.git ~/.claude/skills/brand-exploration-kit
+```
+
+Update later with `git -C ~/.claude/skills/brand-exploration-kit pull`.
+
 ## Install
-**Claude Code** — `cp -r brand-exploration-kit ~/.claude/skills/` (or `<repo>/.claude/skills/`).
-**Claude.ai / Desktop** — zip and upload under Settings → Capabilities → Skills.
+**Claude Code** — the terminal line above, or clone anywhere and copy into `<repo>/.claude/skills/brand-exploration-kit`.
+**Claude.ai / Desktop** — download the zip above and upload it under Settings → Capabilities → Skills.
 **Elsewhere** — paste SKILL.md plus the phase spec you need (01/DECK_SPEC.md, 02/BOARD_SPEC.md) into the system prompt.
 
 ## Use
