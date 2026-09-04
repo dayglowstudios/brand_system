@@ -1,6 +1,6 @@
-# Brand exploration kit (v2.4)
+# Brand exploration kit (v2.5)
 
-Four phases, one folder each: `01-research-deck` → `02-design-system-canvas` → `03-voice-tests` → `04-export`. Each holds its spec, templates and, where cleared, a finished reference (the Meridian canvas in 02).
+Five phases, one folder each: `00-intake` (established brands) → `01-research-deck` → `02-design-system-canvas` → `03-voice-tests` → `04-export`. Each holds its spec, templates and, where cleared, a finished reference (the Meridian canvas in 02).
 
 ## Get it
 
@@ -24,13 +24,15 @@ Two starting points.
 
 **New brand** — "Run a brand exploration for <brand>, a <category> for <audience>, US market, six directions." Full research, wide-open directions.
 
-**Established brand** — "Explore three directions for <brand>. Locked: wordmark, primary green, body typeface. Open: accent, display type, radius, photography. Here's the current style guide and six references." Audit of the current system, then directions that move only the open axes.
+**Established brand, from source** — drop a website URL, brand-guide PDF, screenshots, CSS, or a logo and say "explore directions". The kit reads the brand (Phase 0), fills the inputs itself, proposes what's locked and open, builds an As-is board, and asks only two questions: are the guardrails right, and how many directions.
+
+**Established brand, by brief** — "Explore three directions for <brand>. Locked: wordmark, primary green, body typeface. Open: accent, display type, radius, photography." Same path, with the guardrails given rather than derived.
 
 Then: "Build boards for directions 1, 3 and 6."
 
 ## What to give it
 
-As much or as little as you have. Nothing below is required: the kit researches competitors, derives a position, and draws directions on its own. Anything you do supply narrows the search and replaces a guess. Drop files in an `inputs/` folder and name them in the prompt.
+As much or as little as you have. For an existing brand, a URL or a brand guide alone is enough; the kit extracts the rest. Nothing below is required: the kit researches competitors, derives a position, and draws directions on its own. Anything you do supply narrows the search and replaces a guess. Drop files in an `inputs/` folder and name them in the prompt.
 
 **Brand**
 - Name (fixed), category, product form, audience, market/spelling

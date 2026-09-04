@@ -1,6 +1,6 @@
 ---
 name: brand-exploration-kit
-description: Run a brand exploration from either of two starting points — a new brand with the whole field open, or an established brand exploring within guardrails (locked color, type, wordmark) — and produce two linked artifacts — (1) a 1920×1080 exploration deck that moves from category landscape and archetypes through a positioning map and white space to N named design directions with a side-by-side and next steps, and (2) a pan-and-zoom canvas of full design-system boards (wordmark, palette with contrast ratios, type scale, voice Say/Never, CTA states, components, color rules, type and color in use, applications) for the directions worth developing. Use whenever someone asks to explore brand directions, run a brand sprint, map a category, find the white space, propose identity options, "3 looks for brand X", rebrand, build a brand book or design-system canvas, or add a direction to an existing exploration. Also triggers for "refresh our system", "extend our brand to X", "what could our brand look like if", and any brief that arrives with visual references or an existing style guide. Works for any category; the reference set is the Meridian supplement brand.
+description: Run a brand exploration from either of two starting points — a new brand with the whole field open, or an established brand exploring within guardrails (locked color, type, wordmark) — and produce two linked artifacts — (1) a 1920×1080 exploration deck that moves from category landscape and archetypes through a positioning map and white space to N named design directions with a side-by-side and next steps, and (2) a pan-and-zoom canvas of full design-system boards (wordmark, palette with contrast ratios, type scale, voice Say/Never, CTA states, components, color rules, type and color in use, applications) for the directions worth developing. Use whenever someone asks to explore brand directions, run a brand sprint, map a category, find the white space, propose identity options, "3 looks for brand X", rebrand, build a brand book or design-system canvas, or add a direction to an existing exploration. Also triggers for "refresh our system", "extend our brand to X", "what could our brand look like if", and any brief that arrives with visual references or an existing style guide — or with just a website URL, a brand-guide PDF, screenshots, a CSS/tokens file, or a logo and nothing else. In that case the kit reads the brand itself (Phase 0 intake) instead of asking for a brief. Works for any category; the reference set is the Meridian supplement brand.
 ---
 
 # Brand exploration kit
@@ -24,6 +24,17 @@ GUARDRAILS:               # established only; list what is locked and what is op
 ```
 
 In Mode 2, every direction states which open axes it moves and confirms the locked ones untouched. One direction may test the stretch item, labeled as such.
+
+## Phase 0 · Intake from source (established brands)
+
+When the user hands over a URL, a brand-guide PDF, screenshots, a Figma export, a CSS or tokens file, or a logo, **do not ask them to fill the inputs block**. Run `00-intake/INTAKE.md`: read the sources, fill every input you can, write `intake/<brand>.md` with Read / Inferred / Gaps, and derive a **draft guardrail list** (what the brand clearly protects → locked; what varies across its own surfaces → open). Show the Read list and the draft guardrails back in chat, short, and ask only:
+
+1. Are these guardrails right? (confirm / move items)
+2. How many directions, and deck, canvas, or both?
+
+Everything under Read is never re-asked. AUDIENCE and the stretch item are the usual gaps; ask them only if the source didn't answer them.
+
+Phase 0 also produces the **00 · As-is board** for Phase B, built solely from sourced values, so new directions compare against the real current identity rather than a memory of it.
 
 ## Visual references
 
@@ -51,6 +62,9 @@ If no references arrive, gather 6–10 during Phase A research and present them 
 ```
 SKILL.md                         process, rules, checklists (this file)
 CHANGES.md                       what changed after the first run
+00-intake/                       Phase 0 (established brands only)
+  INTAKE.md                      read a URL / PDF guide / screenshots / CSS / logo into the inputs block
+  intake-template.md             the intake/<brand>.md output shape
 01-research-deck/                Phase A
   DECK_SPEC.md                   slide-by-slide anatomy
   Brand Research Framework.md    six-stage research method
@@ -72,6 +86,7 @@ CHANGES.md                       what changed after the first run
 
 Pull these in alongside this kit; each phase leans on one or two.
 
+- **Phase 0** — *Web research* to fetch the live site · *read_pdf* for brand guides · *brand-system-extractor* when a full token dump from the site or guide is wanted (its tokens.json feeds the As-is board directly)
 - **Phase A** — *Web research* for the competitor audit (facts dated, hooks quoted from live copy) · *Make a deck* for the 1920×1080 build and speaker notes · *Maps & geography* only if distribution or origin matters
 - **Phase B** — *Hi-fi design* for the canvas and board build · *Frontend design* when choosing each direction's aesthetic · *Options* for the turn/letter side-by-side layout · *Make tweakable* if the client wants to flip accents or radii live
 - **Phase C** — none; the prompts go to an image model
@@ -81,10 +96,12 @@ Outside Claude Design, skip this list; SKILL.md and the phase specs carry the me
 
 ## Inputs
 
-Collect or infer, restate before building:
+Collect or infer, restate before building. In Mode 2 with sources, Phase 0 fills this; the user only confirms.
 
 ```yaml
 BRAND:            # fixed; never propose alternatives
+SOURCES:          # URL(s), guide PDF, screenshots, CSS, logo — Phase 0 reads these
+INTAKE:           # path to intake/<brand>.md once Phase 0 has run
 MODE:             # new | established (see Starting points)
 GUARDRAILS:       # established only: locked / open / stretch axes
 REFERENCES:       # files or links, each with a one-line "what works" — pull and push
@@ -99,7 +116,7 @@ DIRECTIONS:       # Phase A count (default 6); Phase B count (default 3)
 DEPTH:            # Phase B: "core" (9 sections) or "full" (13)
 ```
 
-If vague, one round of questions: mode, what's locked, references (ask for 3–8 with a line each), category, audience, how many directions, what the directions should push on (tone, era, medium, price tier), whether they want the deck, the canvas, or both.
+If sources were given, skip to Phase 0 and ask nothing yet. Otherwise, if vague, one round of questions: mode, what's locked, references (ask for 3–8 with a line each), category, audience, how many directions, what the directions should push on (tone, era, medium, price tier), whether they want the deck, the canvas, or both.
 
 ## Phase A · Exploration deck
 
@@ -119,7 +136,7 @@ Follow `01-research-deck/DECK_SPEC.md`. Method from `01-research-deck/Brand Rese
 
 Follow `02-design-system-canvas/BOARD_SPEC.md`. Use `02-design-system-canvas/templates/`.
 
-1. Pick the directions to develop (the deck's side-by-side names the safest and the most distinctive; take one of each plus a wildcard).
+1. Pick the directions to develop (the deck's side-by-side names the safest and the most distinctive; take one of each plus a wildcard). Mode 2: the first board is always **00 · As-is** from the intake file; new directions follow as 01, 02…
 2. Write each direction's spec paragraph before any HTML. Mode 1: directions must differ on ≥3 named axes (borrowed code, palette temperature, type genre, radius language, register, surface). Mode 2: directions share every locked token and differ on ≥2 open axes; the board header shows the guardrail strip.
 3. Build one `.dc.html` canvas: `<meta name="design_doc_mode" content="canvas">`, one `<section>` per turn (newest on top), boards 1180px wide in a flex row with 48px gap, id badge `{turn}{letter}` on each board. All styles inline.
 4. Populate honestly: real copy in the direction's voice, hex on every swatch, measured contrast ratio and verdict on every pairing, primary/secondary/tertiary CTA × default/hover/pressed/disabled, at least three application surfaces.
@@ -147,6 +164,7 @@ See `04-export/EXPORT.md`.
 ## Checklists
 
 **Both modes**
+- [ ] If sources were supplied, intake/<brand>.md exists and nothing under its Read list was asked again
 - [ ] Mode stated; in Mode 2 the locked / open / stretch list is on the brief slide and every direction respects it
 - [ ] References slide present with pull/push and a one-line read per reference
 - [ ] No direction copies a reference; each borrows a named move

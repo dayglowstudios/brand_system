@@ -12,3 +12,4 @@ Lessons from running this end to end, folded into v2 of the kit.
 8. **Market spelling as an input.** We shipped British spelling into a US brand once. MARKET is now a required input.
 9. **Hosting + skill export as the last step.** The canvas becomes a single self-contained HTML for a subdomain, and the winner becomes an application skill with tokens. Both are now in the process.
 10. **Banned lead faces.** Fraunces, Inter, Roboto, Arial lead too many first drafts; listed.
+11. **Intake from source.** Established brands were still being asked to type out palette, type and guardrails they already had on their site or in a PDF. Phase 0 now reads the source, fills the inputs, proposes locked/open/stretch, and builds an As-is board; the user confirms instead of composing.
