@@ -1,4 +1,4 @@
-# Brand exploration kit (v2.3)
+# Brand exploration kit (v2.4)
 
 Four phases, one folder each: `01-research-deck` → `02-design-system-canvas` → `03-voice-tests` → `04-export`. Each holds its spec, templates and, where cleared, a finished reference (the Meridian canvas in 02).
 
@@ -20,7 +20,13 @@ Update later with `git -C ~/.claude/skills/brand-exploration-kit pull`.
 **Elsewhere** — paste SKILL.md plus the phase spec you need (01/DECK_SPEC.md, 02/BOARD_SPEC.md) into the system prompt.
 
 ## Use
-"Run a brand exploration for <brand>, a <category> for <audience>, US market, six directions." Then: "Build boards for directions 1, 3 and 6."
+Two starting points.
+
+**New brand** — "Run a brand exploration for <brand>, a <category> for <audience>, US market, six directions." Full research, wide-open directions.
+
+**Established brand** — "Explore three directions for <brand>. Locked: wordmark, primary green, body typeface. Open: accent, display type, radius, photography. Here's the current style guide and six references." Audit of the current system, then directions that move only the open axes.
+
+Then: "Build boards for directions 1, 3 and 6."
 
 ## What to give it
 
@@ -28,6 +34,7 @@ As much or as little as you have. Nothing below is required: the kit researches 
 
 **Brand**
 - Name (fixed), category, product form, audience, market/spelling
+- New brand or established? If established: what's locked, what's open, anything you'd consider moving; plus the current style guide, tokens or live site
 - Anything locked: wordmark file, existing palette, legal or regulatory limits
 - Positioning or a one-line brief if you have one
 
@@ -41,9 +48,10 @@ As much or as little as you have. Nothing below is required: the kit researches 
 - Era or code you want the directions to borrow from, or to push toward (2026 trends, editorial, clinical, retro-utility)
 - Radius language if you have a view: sharp, 6px, pill
 
-**Visual references**
-- Screenshots or links to 3–8 brands, sites, packs or posters you like, one line each on what specifically works
+**Visual references** (the most useful input you can give)
+- Screenshots or links to 3–8 brands, sites, packs or posters you like, one line each on what specifically works (a type pairing, a color pair, a layout move, a tone)
 - 2–3 you dislike, same treatment
+- They go on a References slide as pull/push, and each direction names which one it answers to
 - Any mood board, Pinterest/Are.na board, or Figma file
 - Photography direction if imagery matters: lighting, crop, what is never shown
 

@@ -1,11 +1,42 @@
 ---
 name: brand-exploration-kit
-description: Run a complete brand exploration for a new or repositioned brand and produce two linked artifacts — (1) a 1920×1080 exploration deck that moves from category landscape and archetypes through a positioning map and white space to N named design directions with a side-by-side and next steps, and (2) a pan-and-zoom canvas of full design-system boards (wordmark, palette with contrast ratios, type scale, voice Say/Never, CTA states, components, color rules, type and color in use, applications) for the directions worth developing. Use whenever someone asks to explore brand directions, run a brand sprint, map a category, find the white space, propose identity options, "3 looks for brand X", rebrand, build a brand book or design-system canvas, or add a direction to an existing exploration. Works for any category; the reference set is the Meridian supplement brand.
+description: Run a brand exploration from either of two starting points — a new brand with the whole field open, or an established brand exploring within guardrails (locked color, type, wordmark) — and produce two linked artifacts — (1) a 1920×1080 exploration deck that moves from category landscape and archetypes through a positioning map and white space to N named design directions with a side-by-side and next steps, and (2) a pan-and-zoom canvas of full design-system boards (wordmark, palette with contrast ratios, type scale, voice Say/Never, CTA states, components, color rules, type and color in use, applications) for the directions worth developing. Use whenever someone asks to explore brand directions, run a brand sprint, map a category, find the white space, propose identity options, "3 looks for brand X", rebrand, build a brand book or design-system canvas, or add a direction to an existing exploration. Also triggers for "refresh our system", "extend our brand to X", "what could our brand look like if", and any brief that arrives with visual references or an existing style guide. Works for any category; the reference set is the Meridian supplement brand.
 ---
 
 # Brand exploration kit
 
-Two phases, two artifacts, one brand.
+Two starting points, two artifacts, one brand.
+
+## Starting points
+
+Decide this first; it changes what Phase A does and how far Phase B may roam.
+
+**Mode 1 · New brand, broad exploration.** Nothing is fixed but the name. Phase A runs in full: category research, archetypes, positioning map, white space, six directions spread across borrowed codes. Phase B boards may differ on every axis.
+
+**Mode 2 · Established brand, guarded exploration.** A system already exists. Some axes are locked (typically wordmark, primary color, a typeface, tone) and the exploration lives inside them. Phase A shrinks: skip or compress the landscape, keep the positioning check, and spend the deck on an **audit of the current system** (what's working, what's dated, what's inconsistent) and directions that each move one or two unlocked axes. Phase B boards share the locked tokens and differ on the free ones.
+
+```yaml
+MODE: new | established
+GUARDRAILS:               # established only; list what is locked and what is open
+  locked:  [wordmark, primary color, body typeface, ...]
+  open:    [accent, secondary type, radius, photography, voice register, layout, motion]
+  stretch: [one locked item the client would consider moving, if any]
+```
+
+In Mode 2, every direction states which open axes it moves and confirms the locked ones untouched. One direction may test the stretch item, labeled as such.
+
+## Visual references
+
+Always ask for them; always use them. References narrow taste faster than any brief.
+
+- Accept anything: screenshots, links, packaging photos, competitor sites, mood boards, Are.na or Pinterest boards, old decks, the current style guide, the brand's own Instagram.
+- For each reference, write one line: *what specifically works* (a type pairing, a color pair, a layout move, a tone of copy). "I like this" is not usable; the line is.
+- Sort them into **pull toward** and **push away from**. Both are inputs.
+- Extract, don't copy: sample palettes, name the type genre, note the radius language and the register. Directions borrow the move, never the brand.
+- Put a **References** slide in the deck (Mode 1: after the brief; Mode 2: inside the audit) showing the pull/push set with the one-line reads, so the room sees what the directions answer to.
+- On each board, the footer or wordmark caption names the reference that direction answers to, if one does.
+
+If no references arrive, gather 6–10 during Phase A research and present them as a slide for the client to react to before directions are drawn.
 
 **Phase A · Exploration deck** — research the category, name the archetypes, find the white space, state the position, propose N directions as one-slide sketches. Output: a deck to present and decide with.
 
@@ -54,6 +85,10 @@ Collect or infer, restate before building:
 
 ```yaml
 BRAND:            # fixed; never propose alternatives
+MODE:             # new | established (see Starting points)
+GUARDRAILS:       # established only: locked / open / stretch axes
+REFERENCES:       # files or links, each with a one-line "what works" — pull and push
+EXISTING_SYSTEM:  # established only: style guide, tokens, live site, current packaging
 CATEGORY:
 PRODUCT_FORM:     # what the customer physically receives
 AUDIENCE:         # the person, and what they won't do
@@ -64,11 +99,13 @@ DIRECTIONS:       # Phase A count (default 6); Phase B count (default 3)
 DEPTH:            # Phase B: "core" (9 sections) or "full" (13)
 ```
 
-If vague, one round of questions: category, audience, what's fixed, how many directions, what the directions should push on (tone, era, medium, price tier), whether they want the deck, the canvas, or both.
+If vague, one round of questions: mode, what's locked, references (ask for 3–8 with a line each), category, audience, how many directions, what the directions should push on (tone, era, medium, price tier), whether they want the deck, the canvas, or both.
 
 ## Phase A · Exploration deck
 
 Follow `01-research-deck/DECK_SPEC.md`. Method from `01-research-deck/Brand Research Framework.md` stages 1–4.
+
+**Mode 2 variant.** Replace steps 1–2 with an **audit**: the current system on one slide (wordmark, palette, type, three live applications), then one slide each for what's working, what's dated, what's inconsistent, with screenshots. Keep step 3 (positioning check against the current competitors). Steps 4–7 unchanged, but each direction slide opens with a locked/open/stretch strip.
 
 1. **Landscape.** 10–15 competitors. Group by the story they tell, not price or formula. Five archetypes is typical; four to six is fine. Each archetype gets a slide: thesis, 3 dated facts, 4 hooks quoted from their copy, angle/offer/tone, design language (4 sampled swatches, Type · Surface · Tell), and one honest "reads as".
 2. **What they share.** The 3 assumptions every archetype makes. This is where the white space hides.
@@ -83,7 +120,7 @@ Follow `01-research-deck/DECK_SPEC.md`. Method from `01-research-deck/Brand Rese
 Follow `02-design-system-canvas/BOARD_SPEC.md`. Use `02-design-system-canvas/templates/`.
 
 1. Pick the directions to develop (the deck's side-by-side names the safest and the most distinctive; take one of each plus a wildcard).
-2. Write each direction's spec paragraph before any HTML. Directions must differ on ≥3 named axes: borrowed code, palette temperature, type genre, radius language, register, surface.
+2. Write each direction's spec paragraph before any HTML. Mode 1: directions must differ on ≥3 named axes (borrowed code, palette temperature, type genre, radius language, register, surface). Mode 2: directions share every locked token and differ on ≥2 open axes; the board header shows the guardrail strip.
 3. Build one `.dc.html` canvas: `<meta name="design_doc_mode" content="canvas">`, one `<section>` per turn (newest on top), boards 1180px wide in a flex row with 48px gap, id badge `{turn}{letter}` on each board. All styles inline.
 4. Populate honestly: real copy in the direction's voice, hex on every swatch, measured contrast ratio and verdict on every pairing, primary/secondary/tertiary CTA × default/hover/pressed/disabled, at least three application surfaces.
 5. When a direction wins, extend it to DEPTH full (sections 10–13), then run `04-export/EXPORT.md`.
@@ -108,6 +145,11 @@ See `04-export/EXPORT.md`.
 - Draw 2–3 spec choices at random from short lists (a script or dice) so the set doesn't collapse into the same three looks every time.
 
 ## Checklists
+
+**Both modes**
+- [ ] Mode stated; in Mode 2 the locked / open / stretch list is on the brief slide and every direction respects it
+- [ ] References slide present with pull/push and a one-line read per reference
+- [ ] No direction copies a reference; each borrows a named move
 
 **Deck**
 - [ ] Archetypes grouped by story; each has thesis, 3 facts, 4 hooks, angle/offer/tone, sampled swatches, "reads as"

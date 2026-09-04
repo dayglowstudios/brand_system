@@ -9,7 +9,9 @@ Direction slides break the deck's own type rules on purpose: each is set in *its
 | # | slide | layout |
 |---|-------|--------|
 | 1 | Title | mono meta top row · 170px serif headline with one italic signal-colored phrase · 38px dek · hairline + mono footer |
-| 2 | The brief | 96px title + mono section tag on a hairline · 1.3fr/1fr grid: serif thesis + two body paragraphs / left-bordered column with "What we are making" and "The brand" |
+| 2 | The brief | 96px title + mono section tag on a hairline · 1.3fr/1fr grid: serif thesis + two body paragraphs / left-bordered column with "What we are making", "The brand" and, in Mode 2, the locked / open / stretch guardrail list |
+| 2b | References | 2×4 grid of reference tiles (image drop zones) · each with a mono caption: PULL or PUSH, source, one-line "what works" |
+| 2 | (Mode 1 layout) | 96px title + mono section tag on a hairline · 1.3fr/1fr grid: serif thesis + two body paragraphs / left-bordered column with "What we are making" and "The brand" |
 | 3 | 02 Landscape (opener) | ink bg · mono number top-left · 160px serif title bottom + 38px dek |
 | 4 | Five archetypes | 5 equal columns, left hairline each: letter (signal, mono) · 52px name · brand list · one-line read |
 | 5–9 | Archetype A–E | header: 76px name + brand chips + "Archetype 0N / 05" · 3 columns: serif thesis + 3 numbered facts / HOOKS (4 quoted) · ANGLE · OFFER · TONE / DESIGN LANGUAGE: 4 swatches, Type · Surface · Tell, READS AS box |
@@ -38,3 +40,18 @@ Direction slides break the deck's own type rules on purpose: each is set in *its
 ## Positioning map
 - Axes are recalibrated until the incumbents cluster in ≤3 of 4 quadrants. If everyone is spread evenly, the axes are wrong.
 - Example: for a supplement category, Effort (daily ritual ↔ none) × Provability (vibes ↔ disclosed doses, third-party tested) left the low-effort/high-proof quadrant empty.
+
+## Mode 2 (established brand) substitutions
+
+Replace slides 3–10 (landscape + archetypes + what they share) with:
+
+| # | slide | layout |
+|---|-------|--------|
+| 3 | 02 Audit (opener) | ink bg · mono number · 160px serif title "The current system" |
+| 4 | As it stands | wordmark + 4 palette swatches + 3 type rows on the left · 3 live application screenshots on the right (drop zones) |
+| 5 | Working | 3 columns · what to keep, with a screenshot each |
+| 6 | Dated | 3 columns · what shows its age, with a screenshot each and the year it reads as |
+| 7 | Inconsistent | 2 columns · pairs of screenshots showing the same element treated two ways |
+| 8 | Guardrails | three columns: LOCKED · OPEN · STRETCH, each item a chip; one line under each column on why |
+
+Positioning map, design direction, opportunity, directions, side by side and next steps follow as in Mode 1. Each direction slide adds a guardrail strip under its header: locked items in the brand's existing color, open items in the direction's accent, the stretch item outlined.
