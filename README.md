@@ -14,6 +14,14 @@ git clone https://github.com/dayglowstudios/brand_system.git ~/.claude/skills/br
 
 Update later with `git -C ~/.claude/skills/brand-exploration-kit pull`.
 
+## Also in this repo: design-system-canvas
+
+A standalone skill in [`design-system-canvas/`](design-system-canvas/SKILL.md) for **established brands only**: turn a live URL, style-guide PDF, screenshots, or a CSS/tokens file into a canvas of design-system boards, skipping the research deck. It's Phase B of the kit as its own entry point. Install it separately (it's one file):
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/dayglowstudios/brand_system/main/design-system-canvas/SKILL.md --create-dirs -o ~/.claude/skills/design-system-canvas/SKILL.md
+```
+
 ## Install
 **Claude Code** — the terminal line above, or clone anywhere and copy into `<repo>/.claude/skills/brand-exploration-kit`.
 **Claude.ai / Desktop** — download the zip above and upload it under Settings → Capabilities → Skills.
